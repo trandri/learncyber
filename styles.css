@@ -1,0 +1,225 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+    transition: color 0.3s ease; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background: #333;
+    color: white; 
+    padding: 10px 0; 
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+nav a {
+    text-decoration: none; 
+    color: white;
+    font-size: 16px; 
+    font-weight: bold; 
+    padding: 10px 15px; 
+    
+}
+
+nav a:hover {
+    color: lightblue; 
+}
+
+nav img {
+    position: relative;
+    left: 0;
+    max-width: 50px;
+    height: 60%;
+    width: 60%;
+    margin-left: -100px;
+    border-radius: 70%;
+}
+.intro {
+    display: flex; /* Active Flexbox */
+    flex-direction: column; /* Organise les éléments verticalement */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Adapte la hauteur à la taille de l'écran (facultatif) */
+    /*background-color: lightblue;*/
+    padding-bottom: 0px;
+}
+.presentation {
+    height: 200px;
+    margin-left: 5em;
+    margin-right: 5em;
+    /*background-color: lightskyblue;*/
+}
+.presentation h1 {
+    margin-top: 100px;
+    font-size: 18px;    
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.presentation p {
+    margin-top: 10px;
+    color: #767676;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    line-height: 1.8em;
+}
+ul {
+    margin-top: ;
+    padding: 1em 0 0 2em;
+    /*background-color: lightblue;*/    
+}
+.sommaire {
+    margin-top: 10em;
+    margin-left: 5.2em;
+    /*background-color: lightgreen;*/
+}
+
+ul li::marker {
+    font-size: 1.5em;
+    color: grey;
+}
+
+.sommaire ul li{
+    font-size: 1.4em;
+    /*background-color: yellow;*/
+    color: #2ea3f2 !important;
+}
+.sommaire a {
+    text-decoration: none;
+}
+.sommaire a:hover{
+    text-decoration: underline;
+}
+
+.sommaire h2 {font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 700px;
+  font-size: 1.8em;
+  color: #2ea3f2;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex: row;
+    }
+    .presentation {
+        flex: 1;
+    }
+    .sommaire {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: lightblue;
+        margin-top: 10em;
+        margin-left: 20px;
+        flex: 1;
+    }
+
+
+}
+.intro h2, .cybersecurite h2 {
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro img {
+    width: 100%;
+    max-width: 500px; /* Empêche l'image de dépasser le conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+    margin-top: 10px; /* Ajoute un espace entre le texte et l'image */
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.domaine {
+    margin-top: 4em;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.domaine p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.tidomaine {
+    font-weight: bold;
+}
+.devcontenu {
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+}
+.devcontenu h2 {
+    font-weight: 700px;
+    font-size: 1.8em;
+    color: #2ea3f2;
+    letter-spacing: 1px;
+    line-height: 1.6em;
+    text-align: left;
+    margin-left: -10px;
+
+}
+
+.cybersecurite {
+    display: flex; /* Active Flexbox */
+    flex-direction: column; /* Organise les éléments verticalement */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Adapte la hauteur à la taille de l'écran (facultatif) */
+    /*background-color: lightblue;*/
+    padding-bottom: 0px;
+}
+.cybersecurite img {
+    width: 100%;
+    max-width: 500px; /* Empêche l'image de dépasser le conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+    margin-top: 10px; /* Ajoute un espace entre le texte et l'image */
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+.cybercontenu, .conclusion{
+    margin-top: 4em;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+}
+
+.cybercontenu h2, .conclusion h2 {
+    font-weight: 700px;
+    font-size: 1.8em;
+    color: #2ea3f2;
+    letter-spacing: 1px;
+    line-height: 1.6em;
+    text-align: left;
+    margin-left: -10px;
+}
+.cybercontenu p, .conclusion p {
+    margin-top: 10px;
+    color: #767676;
+    text-align: justify;
+    padding: 5px 0 5px 0;
+    line-height: 1.8em;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    text-align: justify;
+}
+
+footer p {
+    margin: 1em 0 0 -0.4em;
+    text-align: center;
+}
+
+.reseaux {
+    margin-top: 6em;
+    display: flex;
+    justify-content: center;
+}
+.reseaux img {
+    width: 50px;
+    margin-right: 1em;
+    
+
+}

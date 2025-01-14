@@ -1,0 +1,71 @@
+.center {
+    text-align: center;
+    background-color:#F2F2F2;
+    padding:25px;
+    margin:50px 0px 50px 0px;
+}
+
+.drop-zone {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.drop-zone.dragover {
+    background-color: #e2e2e2; /* Change color when dragged over */
+}
+
+.fileInput {
+    display: none;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ccc;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.progress-bar div {
+    width: 0;
+    background-color: #4caf50;
+    text-align: center;
+    padding: 2px 0;
+    border-radius: 4px;
+    color: white;
+}
+
+.downloadLink {
+    margin-top: 10px;
+}
+
+.center button {
+    background-color: #FF0043 !important;
+    color: #fff !important;
+}
+
+.center button:hover {
+    background-color: #FF0043 !important;
+    color: #fff !important;
+}
+
+.loading-message {
+    text-align: center;
+    margin-top: 20px;
+    display: none; /* Masqué par défaut, sera affiché pendant le chargement */
+    animation: fade 2s infinite; /* Animation de fondu */
+}
+
+/* Animation de fondu */
+@keyframes fade {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}

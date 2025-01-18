@@ -1,0 +1,83 @@
+@media screen and (max-width: 480px) {
+    body {
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+      background-color: #f0f0f0;
+      width: 100%;
+      p {
+        color: #767676;
+      }
+      footer  p {
+        color: #f0f0f0 !important;
+      }
+    }
+    nav {
+        display: flex;
+        height: 4rem;
+        z-index: 1000;
+    }
+    .container {
+      height: 35rem;
+    }
+    .presentation {
+      height: 33rem;
+      letter-spacing: 0.2px;
+      margin: 0 0.9rem 0 0.9rem;
+    }
+    .sommaire {
+      margin: 2rem 0 2rem 0.9rem;
+      font-size: 90%;
+      height: 4rem;
+    }
+
+    .sommaire ul {
+      position: absolute;
+      float: left;
+      margin: 4.5rem 10px 0 0;;
+      height: 10rem;
+    }
+    .somaire ul li {
+      position: absolute; 
+    }
+    .intro {
+      display: flex;
+      width: 100%;
+      align-items: normal;
+      justify-content: left;
+      margin-top: 5rem;
+    }
+    .intro img {
+      width: 80%;
+      align-self: center;
+    }
+    .devcontenu {
+      margin-left: 0.9rem;
+      margin-top: 15rem;
+      margin-right: 0.9rem;
+    }
+    .devcontenu h2 {
+      line-height: 1.4em;
+      margin-left: 0;
+      width: 100%;
+      font-size: 1.2em;
+      /*background-color: lightcoral;*/
+      text-align: center;
+    }
+    footer {
+      position: absolute;
+      height: 420px;
+      width: 100%;
+      left: 0;
+    }
+    .reseaux {
+      margin-top: 12rem;
+      left: 3.5rem;
+    }
+
+    #creation {
+      margin-top: 24rem;
+      
+    }
+    
+    }

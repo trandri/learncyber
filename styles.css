@@ -1,13 +1,12 @@
 body {
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
 nav {
     display: flex; 
     align-items: center; 
     justify-content: space-around;
-    transition: color 0.3s ease; 
     position: fixed; 
     top: 0; 
     left: 0; 
@@ -25,11 +24,13 @@ nav a {
     font-size: 16px; 
     font-weight: bold; 
     padding: 10px 15px; 
-    
+    transition: transform 0.3s ease;    
 }
 
 nav a:hover {
-    color: lightblue; 
+    color: lightblue;
+    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 nav img {
@@ -42,11 +43,11 @@ nav img {
     border-radius: 70%;
 }
 .intro {
-    display: flex; /* Active Flexbox */
-    flex-direction: column; /* Organise les éléments verticalement */
-    justify-content: center; /* Centre les éléments verticalement */
-    align-items: center; /* Centre les éléments horizontalement */
-    text-align: center; /* Adapte la hauteur à la taille de l'écran (facultatif) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
     /*background-color: lightblue;*/
     padding-bottom: 0px;
 }
@@ -77,6 +78,7 @@ ul {
 .sommaire {
     margin-top: 10em;
     margin-left: 5.2em;
+    height: 250px;
     /*background-color: lightgreen;*/
 }
 
@@ -100,7 +102,6 @@ ul li::marker {
 .sommaire h2 {font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
   font-weight: 700px;
   font-size: 1.8em;
-  color: #2ea3f2;
   letter-spacing: 1px;
   line-height: 1.6em;
   text-align: left;
@@ -117,7 +118,6 @@ ul li::marker {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: lightblue;
         margin-top: 10em;
         margin-left: 20px;
         flex: 1;
@@ -128,13 +128,14 @@ ul li::marker {
 .intro h2, .cybersecurite h2 {
     
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #2ea3f2;
 }
 
 .intro img {
     width: 100%;
-    max-width: 500px; /* Empêche l'image de dépasser le conteneur */
-    height: auto; /* Maintient les proportions de l'image */
-    margin-top: 10px; /* Ajoute un espace entre le texte et l'image */
+    max-width: 500px;
+    height: auto;
+    margin-top: 10px; 
     margin-bottom: 5px;
     border-radius: 10px;
 }
@@ -166,19 +167,19 @@ ul li::marker {
 }
 
 .cybersecurite {
-    display: flex; /* Active Flexbox */
-    flex-direction: column; /* Organise les éléments verticalement */
-    justify-content: center; /* Centre les éléments verticalement */
-    align-items: center; /* Centre les éléments horizontalement */
-    text-align: center; /* Adapte la hauteur à la taille de l'écran (facultatif) */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
     /*background-color: lightblue;*/
     padding-bottom: 0px;
 }
 .cybersecurite img {
     width: 100%;
-    max-width: 500px; /* Empêche l'image de dépasser le conteneur */
-    height: auto; /* Maintient les proportions de l'image */
-    margin-top: 10px; /* Ajoute un espace entre le texte et l'image */
+    max-width: 500px; 
+    height: auto; 
+    margin-top: 10px; 
     margin-bottom: 5px;
     border-radius: 15px;
 }
@@ -207,19 +208,46 @@ ul li::marker {
     text-align: justify;
 }
 
-footer p {
-    margin: 1em 0 0 -0.4em;
+footer {
+    background-color: #333 !important;
+    margin-top: 20px;
+    padding-top: 1.2rem;
+    color: white;
+    font-family: "Karla", sans serif;
+    height: 260px;
+    letter-spacing: 1.4px;
+    line-height: 1.8em;
+}
+.footer {
+    display: inline-flex; 
+    width: 100%;
+}
+
+ #creation {
+    color: white;
+    margin: 14em 0 0 -0.4em;
+    text-align: center;
+    font-weight: 700;
     text-align: center;
 }
 
 .reseaux {
-    margin-top: 6em;
-    display: flex;
-    justify-content: center;
-}
+    position: absolute;
+    right: 12rem;
+}   
 .reseaux img {
-    width: 50px;
+    width: 40px;
     margin-right: 1em;
-    
+    border-radius: 75%;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
 
+.reseaux img:hover {
+    transform: scale(1.2);
+}
+
+.information {
+    position: absolute;
+    margin-left: 3.5em;
 }
